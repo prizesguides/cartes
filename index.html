@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>claimdigitalgiftcards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- Le style CSS reste inchangé car il n'y a pas de texte à traduire dans le CSS -->
+    <style>/* ton CSS ici, inchangé */</style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="logo">
+            <a href="/"><button id="navLogo">claimdigitalgiftcards</button></a>
+            <i class="fa fa-th-list" id="box"></i>
+        </div>
+        
+        <div class="navbuttons" id="navbuttonss">
+            <a href="/"><button id="home">Accueil</button></a>
+            <a href="/"><button id="contact">Contact</button></a>
+            <a href="/"><button id="about">À propos</button></a>
+        </div>
+    </div>
+
+    <div id="background1">
+        <div id="welcomemessage">
+            <h1 id="title1">Bienvenue sur <br>claimdigitalgiftcards !</h1>
+            <p id="paragraph1">Un endroit pour découvrir des moyens fiables d’obtenir de vraies cartes-cadeaux.</p>
+        </div>
+    </div>
+    
+    <div id="background2">
+        
+        <div class="paragraph2-container">
+            <h3 class="title">Comment obtenir plusieurs cartes-cadeaux ?</h3>
+            <p class="paragraph">Obtenir une carte-cadeau ne devrait pas être compliqué. En suivant notre guide, vous pourrez rapidement utiliser votre carte et profiter de ses avantages. Accédez à notre Guide complet d'utilisation des cartes-cadeaux et devenez un expert pour tirer le meilleur parti de chaque carte !</p>
+        </div>
+        
+        <div class="cardsbox">
+            <img src="https://cdn.prod.website-files.com/63076ada5d76cf431774c0d1/63d27c7a25087d98617c5444_Gift%20Card-2.png">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvNbw21_t2UooIZgroW-65elv82IevdHc7xw&s">
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5900/5900146_sd.jpg">
+            <img src="https://i5.walmartimages.com/seo/PlayStation-Store-25-eGift-Card-Digital_e7db1c03-a2fd-4eec-978b-93494cd98afd.f2e47fa7464d1180f35f30d8c306f406.png">
+            <img src="https://images.rbxcdn.com/d572cc8714e0ec771ad8268977880ddf.png">
+            <img src="https://www.itoucheg.com/storage/2021/11/44-2.jpg">
+        </div>
+
+        <button class="linkbutton">Accéder au guide</button>
+        
+        <div data-captcha-enable="true">
+        </div>
+    </div>
+
+    <script>
+        var navButtons = document.querySelector('.navbuttons')
+        const navBar = document.querySelector('.navbar')
+        const box = document.querySelector('#box')
+        box.addEventListener('click', function () {
+            navButtons.classList.toggle('active1')
+            navBar.classList.toggle('active2')
+        })
+    </script>
+
+</body>
+</html>
