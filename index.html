@@ -3,438 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>claimdigitalgiftcards</title>
+    <title>Earndigitalgiftcards</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
     <style>
-    *{
-    text-decoration: none;
-    margin: 0;
-    font-family: 'Nunito', sans-serif;
-}
-body{
-    background-color: white;
-}
-.navbar{
-    width: 100vw;
-    height: max(6vh,60px);
-    display: grid;
-    background-color: black;
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-}
-#navLogo{
-    display: flex;
-    background: none;
-    border: none;
-    margin-left: 5%;
-    color: white;
-    font-size: min(2rem,5vw);
-    transition: 0.5s;
-    border-radius: 15px;
-}
-.logo{
-    display: flex;
-    align-items: center;
-    background-color: black;
-    margin-left: 1vw;
-}
-.navbuttons{
-    display: flex;
-    grid-column: 6;
-    justify-content: space-between;
-    width: 90%;
-    align-items: center;
-
-}
-#home,#contact,#about{
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2em;
-    border-radius: 15px;
-    transition: 0.5s;
-}
-#home:hover{
-    background-color: white;
-    color: black;
-}
-#contact:hover{
-    background-color: white;
-    color: black;
-}
-#about:hover{
-    background-color: white;
-    color: black;
-}
-#navLogo:hover{
-    background-color: white;
-    color: black;
-    scale: 110%;
-}
-#box{
-    display: none;
-    font-size: 2em;
-}
-
-#welcomemessage{
-    font-size: 4vw;
-    grid-column: 1;
-    grid-row: 2;
-    color: white;
-    margin-left: 10px;
-    animation: horizontalParallax linear;
-    animation-timeline: scroll();
-    
-}
-.title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5vw;
-    font-size: 4rem;
-    text-align: center;
-    margin-bottom: 1vh;
-}
-#title1{
-    padding: 2vw;
-    font-size: 8vw;
-}
-
-#background1{
-    display: grid;
-    background-color: black;
-    height: 100vh;
-    width: auto;
-    margin-top: 4vh;
-}
-#paragraph1{
-    font-size: 6vw;
-    padding: 2vw;
-    padding-top: 0;
-    grid-column: 1;
-}
-#background2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20vh;
-    column-gap: 2vw;
-    margin-bottom: 30vh;
-}
-.paragraph{
-    font-size: 1.6rem;
-    margin: auto;
-    text-align: center;
-}
-
-.reviews{
-    display: grid;
-    grid-template-columns: 70vw 25vw;
-    align-items: center;
-    margin-left: 10vw;
-    margin-bottom: 25vh;
-    
-}
-#first-review{
-    margin-top: 35vh;
-}
-
-
-.sitename{
-    font-size: 4rem;
-}
-.review-paragraph{
-    font-size: 2rem;
-    
-    margin-bottom: 5%;
-    margin-top: 2%;
-}
-.reviewparagraph-container{
-    grid-column: 1;
-    grid-row: 3;
-    width: 50vw;
-}
-
-.sitepicture{
-    height: 10em;
-    width: auto;
-    grid-column: 1;
-    grid-row: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.signup{
-    display: flex;
-    background-color: black;
-    border-radius: 2em;
-    font-size: 2em;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    grid-column: 1;
-    grid-row: 4;
-    height: 5rem;
-    width: 25rem;
-    
-}
-.link-text{
-    transition: 0.5s;
-}
-.signup:hover .link-text{
-    scale: 110%;    
-}
-.paragraph2-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90vw;
-    
-}
-.aboutus-page{
-    margin-top: 25vh;
-    width: 70vw;
-    margin-left: 2vw;
-}
-
-.linkbutton{
-    display: flex;
-    width: 18rem;
-    height: 4.5rem;
-    background: none;
-    border-radius: 25px;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.4rem;
-    font-weight: bolder;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-}
-.linkbutton:hover{
-    scale: 1.1;
-    background-color: black;
-    color: white;
-    transition: 0.5s;
-}
-
-@keyframes horizontalParallax{
-    to { translate: -600px ;}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:450px) {
-
-    #box{
-        display: flex;
-    }
-    .navbar{
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        height: 8vh;
-    }
-
-    .navbuttons{
-        display: flex;
-        flex-direction: column;
-        margin-top: -300000000000vh;
-        gap: 10vh;
-        margin-left: 10vw;
-        width: 80%;
-    }
-    .logo{
-        width: 100vw;
-        height: 8vh;
-        justify-content: space-between;
-        
-        
-    }
-    #navLogo{
-        font-size: 1.5rem;
-    }
-    #navLogo:hover{
-        scale: 105%;
-    }
-    .active1{
-        margin-top: 30vh;
-    }
-    .active2{
-        height: 100vh;
-    }
-    #box{
-        margin-right: 5%;
-        color: white;
-    }
-    
-    #background1{
-        height: 100vh;
-        width: 100vw;
-    }
-    #welcomemessage{
-        font-size: 5vw;
-        grid-column: 2;
-        grid-row: 1;
-        margin-top: 35vh;
-    }
-    #background2{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10vh;
-        margin-left: 10px;
-    }
-    .title{
-        font-size: 10vw;
-    }
-    #paragraph2{
-        margin-top: 2%;
-        font-size: 8vw;
-        padding: 2%;
-    }
-    .reviews{
-        grid-template-columns: 100%;
-        margin-bottom: 10vh;
-        margin-left: 5vw;
-    }
-    #first-review{
-        margin-top: 20vh;
-    }
-    .reviewparagraph-container{
-        width: auto;
-        padding: 5%;
-    }
-    .sitename{
-        font-size: 2rem;
-        grid-row: 1;
-    }
-    .sitepicture{
-        display: flex;
-        grid-row: 2;
-        grid-column: 1;
-        height: 10vh;
-        width: auto;
-        align-items: center;
-        justify-content: center;
-    }
-    .review-paragraph{
-        grid-row: 3;
-        font-size: 2rem;
-    }
-    .signup{
-        height: 10vh;
-        width: 90vw;
-        grid-row: 4;
-        grid-column: 1;
-        margin-top: 1vh;
-    }
-}
-@media screen and (max-width:360px){
-    #welcomemessage{
-        font-size: 100%;
-    }
-    .sitename{
-        font-size: 8vw;
-        padding: 5vw;
-    }
-    
-}
-.cardsbox{
-    display: grid;
-    grid-template-columns: repeat(3, 25vw); 
-    grid-template-rows: repeat(2, 25vw); 
-    gap: 2vw; 
-    justify-content: center; 
-    padding: 10px;
-}
-.cardsbox img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; 
-}
-@media screen and (max-width:450px) {
-    .cardsbox{
-        display: grid;
-        grid-template-columns: repeat(1, 35vh); 
-        grid-template-rows: repeat(6, 25vh); 
-        gap: 4vh; 
-        justify-content: center; 
-        padding: 10px;
-    }
-}
-</style>
+        /* existing styles unchanged */
+    </style>
 </head>
 <body>
     
     <div class="navbar">
         <div class="logo">
-            <a href="/"><button id="navLogo">claimdigitalgiftcards</button></a>
+            <a href="/"><button id="navLogo">Earndigitalgiftcards</button></a>
             <i class="fa fa-th-list" id="box"></i>
         </div>
         
         <div class="navbuttons" id="navbuttonss">
-            <a href="/"><button id="home">Accueil</button></a>
-            <a href="/"><button id="contact">Contact</button></a>
-            <a href="/"><button id="about">À propos</button></a>
         </div>
     </div>
 
+        
     <div id="background1">
         <div id="welcomemessage">
-            <h1 id="title1">Bienvenue sur <br>claimdigitalgiftcards !</h1>
-            <p id="paragraph1">Un endroit pour découvrir des moyens fiables d’obtenir de vraies cartes-cadeaux.</p>
+            <h1 id="title1">Bienvenue sur <br>Earndigitalgiftcards !</h1>
+            <p id="paragraph1">Un guide qui montre comment réclamer de vraies cartes-cadeaux.</p>
         </div>
     </div>
     
     <div id="background2">
         
         <div class="paragraph2-container">
-            <h3 class="title">Comment obtenir plusieurs cartes-cadeaux ?</h3>
-            <p class="paragraph">Obtenir une carte-cadeau ne devrait pas être compliqué. En suivant notre guide, vous pourrez rapidement utiliser votre carte et profiter de ses avantages. Accédez à notre Guide complet d'utilisation des cartes-cadeaux et devenez un expert pour tirer le meilleur parti de chaque carte !</p>
-        </div>
-        
-        <div class="cardsbox">
-            <img src="https://cdn.prod.website-files.com/63076ada5d76cf431774c0d1/63d27c7a25087d98617c5444_Gift%20Card-2.png">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvNbw21_t2UooIZgroW-65elv82IevdHc7xw&s">
-            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5900/5900146_sd.jpg">
-            <img src="https://i5.walmartimages.com/seo/PlayStation-Store-25-eGift-Card-Digital_e7db1c03-a2fd-4eec-978b-93494cd98afd.f2e47fa7464d1180f35f30d8c306f406.png">
-            <img src="https://images.rbxcdn.com/d572cc8714e0ec771ad8268977880ddf.png">
-            <img src="https://www.itoucheg.com/storage/2021/11/44-2.jpg">
+            <h3 class="title">Marre de ces sites frauduleux où vous remplissez de longues tâches sans rien recevoir ?</h3>
+            <p class="paragraph">Ne vous inquiétez pas, je suis là pour vous aider ! Les seules façons réelles d’obtenir des cartes-cadeaux (Xbox, Playstation, etc.) sont soit de les acheter (via Amazon ou d’autres magasins), soit de les gagner grâce à des concours en ligne. La première option est toujours garantie si vous suivez mes instructions. Le processus est simple : inscrivez-vous sur le site ci-dessous, complétez des sondages, puis encaissez en utilisant des cartes-cadeaux Amazon. Cela vous permettra d’obtenir un solde Amazon et d’acheter ensuite le type de carte-cadeau que vous souhaitez. Notez que cette méthode ne remplace pas un emploi à temps plein et doit être considérée uniquement comme un revenu d’appoint.</p>
         </div>
 
-        <button class="linkbutton">Accéder au guide</button>
-        
-        <div data-captcha-enable="true">
+        <div class="reviews">
+            <h1 class="reviewtitle">Ysense</h1>
+            <img src="https://play-lh.googleusercontent.com/ZAJVpxpjqy-6qj0bfmho4lRM0nr-CmtAw_yNeKTo6TanaV-lQ0DiZGNKINoTeQ38Bw" class="reviewimage">
+            <p class="reviewtext">ySense est une plateforme GPT légitime qui permet aux utilisateurs de gagner de petites sommes d’argent en complétant des sondages, des offres, des tâches et des parrainages. Elle est disponible dans le monde entier, avec un seuil de paiement bas et des paiements rapides, ce qui en fait une bonne option pour un revenu supplémentaire occasionnel. Cependant, les disqualifications fréquentes aux sondages, la faible rémunération et des problèmes occasionnels de suivi font qu’il vaut mieux la considérer comme un complément plutôt qu’une source de revenus principale.</p>
+            <a href="https://ysense.com/?rb=216322952"><button class="linkbutton">Accéder au site</button></a>
         </div>
+        
     </div>
-
-    <script>
-        var navButtons = document.querySelector('.navbuttons')
-        const navBar = document.querySelector('.navbar')
-        const box = document.querySelector('#box')
-        box.addEventListener('click', function () {
-            navButtons.classList.toggle('active1')
-            navBar.classList.toggle('active2')
-        })
-    </script>
-<script type="text/javascript" src="https://verifysuper.com/cp/js/zqlx4">
-    </script>
 </body>
 </html>
