@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Earndigitalgiftcards</title>
-    <link rel="stylesheet" href="style.css">
+    <title>claimdigitalgiftcards</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
-    <style>
-        *{
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+<style>
+    *{
     text-decoration: none;
     margin: 0;
     font-family: 'Nunito', sans-serif;
@@ -134,28 +133,17 @@ body{
 }
 
 .reviews{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10vh;
-    align-items: center;   
-}
-.reviewimage{
-    width: 20vh;
-    height: auto;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-}
-.reviewtitle{
-    font-size: 3rem;
+    display: grid;
+    grid-template-columns: 70vw 25vw;
+    align-items: center;
+    margin-left: 10vw;
+    margin-bottom: 25vh;
+    
 }
 #first-review{
     margin-top: 35vh;
 }
 
-.reviewtext{
-    font-size: 1.6rem;
-    text-align: center;
-}
 
 .sitename{
     font-size: 4rem;
@@ -312,7 +300,6 @@ body{
         flex-direction: column;
         margin-top: 10vh;
         margin-left: 10px;
-        margin-right: 10px;
     }
     .title{
         font-size: 10vw;
@@ -325,7 +312,7 @@ body{
     .reviews{
         grid-template-columns: 100%;
         margin-bottom: 10vh;
-        margin: 5vw;
+        margin-left: 5vw;
     }
     #first-review{
         margin-top: 20vh;
@@ -351,9 +338,6 @@ body{
         grid-row: 3;
         font-size: 2rem;
     }
-    .warning{
-        text-align: center;
-    }
     .signup{
         height: 10vh;
         width: 90vw;
@@ -370,44 +354,139 @@ body{
         font-size: 8vw;
         padding: 5vw;
     }
+    
 }
-    </style>
+.cardsbox{
+    display: grid;
+    grid-template-columns: repeat(3, 25vw); 
+    grid-template-rows: repeat(2, 25vw); 
+    gap: 2vw; 
+    justify-content: center; 
+    padding: 10px;
+}
+.cardsbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+@media screen and (max-width:450px) {
+    .cardsbox{
+        display: grid;
+        grid-template-columns: repeat(1, 35vh); 
+        grid-template-rows: repeat(6, 25vh); 
+        gap: 4vh; 
+        justify-content: center; 
+        padding: 10px;
+    }
+}
+</style>
 </head>
 <body>
     
     <div class="navbar">
         <div class="logo">
-            <a href="/"><button id="navLogo">Earndigitalgiftcards</button></a>
+            <a href="/"><button id="navLogo">claimdigitalgiftcards</button></a>
             <i class="fa fa-th-list" id="box"></i>
         </div>
         
+        
         <div class="navbuttons" id="navbuttonss">
+            <a href="/"><button id="home">Home</button></a>
+            <a href="/"><button id="contact">Contact</button></a>
+            <a href="/"><button id="about">About</button></a>
         </div>
     </div>
 
         
     <div id="background1">
         <div id="welcomemessage">
-            <h1 id="title1">Bienvenue sur <br>Earndigitalgiftcards !</h1>
-            <p id="paragraph1">Un guide qui montre comment réclamer de vraies cartes-cadeaux.</p>
+            <h1 id="title1">Welcome to <br>claimdigitalgiftcards !</h1>
+            <p id="paragraph1">A place to find legit ways to claim real gift cards.</p>
+            
         </div>
+        
     </div>
     
     <div id="background2">
         
         <div class="paragraph2-container">
-            <h3 class="title">Marre de ces sites frauduleux où vous remplissez de longues tâches sans rien recevoir ?</h3>
-            <p class="paragraph">Ne vous inquiétez pas, je suis là pour vous aider ! Les seules façons réelles d’obtenir des cartes-cadeaux (Xbox, Playstation, etc.) sont soit de les acheter (via Amazon ou d’autres magasins), soit de les gagner grâce à des concours en ligne. La première option est toujours garantie si vous suivez mes instructions. Le processus est simple : inscrivez-vous sur le site ci-dessous, complétez des sondages, puis encaissez en utilisant des cartes-cadeaux Amazon. Cela vous permettra d’obtenir un solde Amazon et d’acheter ensuite le type de carte-cadeau que vous souhaitez. Notez que cette méthode ne remplace pas un emploi à temps plein et doit être considérée uniquement comme un revenu d’appoint.</p>
+            <h3 class="title">How to claim multiple gift cards ?</h3>
+            <p class="paragraph">Claiming a gift card doesn't have to be a headache. By following our guide, you can quickly redeem your gift card and start enjoying the benefits. Access our full Gift Card Redemption Guide and become a pro at making the most of every card!</p>
+        </div>
+        <div class="cardsbox">
+            <img src="https://cdn.prod.website-files.com/63076ada5d76cf431774c0d1/63d27c7a25087d98617c5444_Gift%20Card-2.png">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvNbw21_t2UooIZgroW-65elv82IevdHc7xw&s">
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5900/5900146_sd.jpg">
+            <img src="https://i5.walmartimages.com/seo/PlayStation-Store-25-eGift-Card-Digital_e7db1c03-a2fd-4eec-978b-93494cd98afd.f2e47fa7464d1180f35f30d8c306f406.png">
+            <img src="https://images.rbxcdn.com/d572cc8714e0ec771ad8268977880ddf.png">
+            <img src="https://www.itoucheg.com/storage/2021/11/44-2.jpg">
+        </div>
+        <button class="linkbutton">Access the guide</button>
+        <div data-captcha-enable="true">
         </div>
 
-        <div class="reviews">
-            <h1 class="warning">IMPORTANT : Utilisez vos véritables informations lors de votre inscription sur le site. Si vous ne le faites pas, vous ne pourrez pas retirer vos gains. De plus, fournir de fausses informations dans les sondages peut entraîner des disqualifications.</h1>
-            <h1 class="reviewtitle">Ysense</h1>
-            <img src="https://play-lh.googleusercontent.com/ZAJVpxpjqy-6qj0bfmho4lRM0nr-CmtAw_yNeKTo6TanaV-lQ0DiZGNKINoTeQ38Bw" class="reviewimage">
-            <p class="reviewtext">ySense est une plateforme GPT légitime qui permet aux utilisateurs de gagner de petites sommes d’argent en complétant des sondages, des offres, des tâches et des parrainages. Elle est disponible dans le monde entier, avec un seuil de paiement bas et des paiements rapides, ce qui en fait une bonne option pour un revenu supplémentaire occasionnel. Cependant, les disqualifications fréquentes aux sondages, la faible rémunération et des problèmes occasionnels de suivi font qu’il vaut mieux la considérer comme un complément plutôt qu’une source de revenus principale.</p>
-            <a href="https://www.ysense.com/?rb=216322952"><button class="linkbutton">Accéder au site</button></a>
-        </div>
-        
     </div>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script>
+        var navButtons = document.querySelector('.navbuttons')
+        const navBar = document.querySelector('.navbar')
+        const box = document.querySelector('#box')
+        box.addEventListener('click',function(){
+            navButtons.classList.toggle('active1')
+            navBar.classList.toggle('active2')
+        })
+        
+    </script>
+
+    <script type="text/javascript" src="https://verifysuper.com/cp/js/zqlx4">
+    </script>
+
+
 </body>
 </html>
